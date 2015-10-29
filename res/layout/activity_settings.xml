@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dashboard_background" >
+
+        <TextView
+            android:id="@+id/btnBMP"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back_background"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="BMP"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnBMP"
+            android:gravity="center"
+            android:text="Realtime update"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Realtime ticket processing"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/orange" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/btnOn_Off"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:text="@string/settings_text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/orange" />
+
+    <ImageView
+        android:id="@+id/btnOn_Off"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/off" />
+
+</RelativeLayout>

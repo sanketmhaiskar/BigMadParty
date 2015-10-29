@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserMenu" >
+
+    <TextView
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSettings"
+        android:layout_alignRight="@+id/btnSettings"
+        android:layout_below="@+id/btnSettings"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/orange_transparent"
+        android:gravity="center"
+        android:text="Logout"
+        android:textColor="@drawable/textcolor_switcher"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/btnEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSyncProcessed"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnSyncProcessed"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/orange_transparent"
+        android:gravity="center"
+        android:text="Events"
+        android:textColor="@drawable/textcolor_switcher"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSyncProcessed"
+        android:layout_alignRight="@+id/btnSyncProcessed"
+        android:layout_below="@+id/btnSyncProcessed"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/orange_transparent"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="@drawable/textcolor_switcher"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/btnSyncProcessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnEvents"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/orange_transparent"
+        android:gravity="center"
+        android:text="Sync Processed Tickets"
+        android:textColor="@drawable/textcolor_switcher"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtlastsync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSyncProcessed"
+        android:layout_centerHorizontal="true"
+        android:text="Last Synced :"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/orange" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:alpha="0.4"
+        android:src="@drawable/logo_big" />
+
+</RelativeLayout>

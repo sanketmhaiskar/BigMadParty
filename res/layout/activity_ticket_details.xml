@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ticket_details_background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dashboard_background" >
+
+        <TextView
+            android:id="@+id/btnTicketlist"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back_background"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Tickets"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnTicketlist"
+            android:gravity="center"
+            android:text="Ticket Detail"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btnProcessTicket"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="264dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Ticket No"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="15dp"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/TextView01"
+                android:layout_marginTop="15dp"
+                android:text="Gender"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView01"
+                android:layout_below="@+id/TextView02"
+                android:layout_marginTop="15dp"
+                android:text="Age"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView01"
+                android:layout_below="@+id/TextView03"
+                android:layout_marginTop="15dp"
+                android:text="Event"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView01"
+                android:layout_below="@+id/TextView04"
+                android:layout_marginTop="15dp"
+                android:text="Processed"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtTicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="759454559553"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView01"
+                android:layout_alignLeft="@+id/txtTicketNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/TextView01"
+                android:text="Edwina RumpleStinsky"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView02"
+                android:layout_alignLeft="@+id/txtTicketNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/TextView02"
+                android:text="Female"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView03"
+                android:layout_alignLeft="@+id/txtTicketNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/TextView03"
+                android:text="Age"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView04"
+                android:layout_alignLeft="@+id/txtTicketNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/TextView04"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Brazilian Party"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtisProcessed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/TextView05"
+                android:layout_alignLeft="@+id/txtTicketNo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/TextView05"
+                android:text="No"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btnProcessTicket"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/process_blueback"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Process"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
